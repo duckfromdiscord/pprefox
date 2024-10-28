@@ -10,7 +10,8 @@
     "icons": {},
     "permissions": [
         "management",
-        "nativeMessaging"
+        "nativeMessaging",
+        "tabs"
     ],
     "applications": {
         "gecko": {
