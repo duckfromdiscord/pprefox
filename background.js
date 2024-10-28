@@ -48,4 +48,9 @@ port.onMessage.addListener((msg) => {
       });
     }
   }
+  if (msg['command'] === "select_tab") {
+    if (msg.hasOwnProperty("index")) {
+      browser.tabs.update(msg['index'], {"active": true});
+    }
+  }
 });
